@@ -10,19 +10,14 @@ const RingSection = () => {
       <motion.img
 
         variants={fadeIn('right', 'spring', 0.5 * 3, 1)}
-        src='./r.png' alt='phone apple samsung' className='xl:w-[500px] rounded-xl' />
-
-      {/* <motion.div className='text-left' variants={fadeIn('left', 'spring', 0.5 * 1, 1)}>
-        <p className={`${styles.sectionSubText} text-right`}>
-          Mūsu dizaina detaļās iemiesojas drosmīgs un izsmalcināts gaumeņu savienojums. <br /><br />Katrs no mūsu izstrādājumiem atklāj ne tikai unikālu dizainu, bet arī augstas kvalitātes materiālus un izcilu izpildījumu.<br /><br /> Izceļieties no pūļa un izvēlieties dizainu, kas atspoguļo jūsu drosmīgo un izsmalcināto personību!
-        </p>
-      </motion.div> */}
+        src='./tractor.jpg' alt='sia_elektra' className='xl:w-[500px] rounded-xl' />
       <div>
-        <motion.p variants={textVariant(1)} className={`${styles.sectionSubText} mb-6`}>
-          Mūsu 3D vizualizācijas un modelēšanas eksperti palīdzēs jūsu zīmolam pāriet uz jaunu līmeni!
+        <motion.p variants={textVariant(1)} className={`${styles.sectionSubText}`}>
+          Leader of Sector. It is no coincidence that our country’s leading agricultural equipment manufacturers prefer ELP calaborating
+          with Di-San in terms of quality and robustness.
         </motion.p>
-        <motion.p variants={textVariant(2)} className={`${styles.sectionSubText} mb-6 text-right`} >
-          Mēs specializējamies juvelierizstrādājumu 3D modelēšanā un renderēšanā, un mūsu mērķis ir radīt ekskluzīvas,  augstas kvalitātes darījumu iespējas jūsu biznesam!
+        <motion.p variants={textVariant(2)} className={`${styles.sectionSubText} text-right mt-6`} >
+          We are continuing our path with sure steps to move this leadership in our country to Europe.
         </motion.p>
       </div>
 

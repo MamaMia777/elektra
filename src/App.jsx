@@ -14,15 +14,17 @@ const App = () => {
           <Hero />
           <StarsCanvas />
         </div>
-        <About />
+        {/* <About /> */}
         <First />
         <Man />
         <RingSection />
-        <Video />
+
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
         </div>
+
+
         <Footer />
       </div>
     </BrowserRouter>

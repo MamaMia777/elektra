@@ -6,53 +6,46 @@ import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
 const First = () => {
   return (
-    <div className='grid grid-cols-2 md:grid-cols-3 gap-5'>
+    <div className='mt-15'>
+      <h1 className={`${styles.sectionHeadText} bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-700 text-clip bg-clip-text text-transparent mb-[3rem]`}>Gallery</h1>
+      <div className='grid grid-cols-2 gap-5'>
 
-      <motion.div
-        variants={fadeIn('right', 'spring', 0.5 * 0, 1)}
-        className='rounded-xl w-full green-pink-gradient overflow-hidden p-[1px]'
-      >
-        <img className='rounded-xl' src="./rings/ring1.png" alt="ring" />
+        <motion.div
+          variants={fadeIn('right', 'spring', 0.5 * 1, 1.5)}
+        >
+          <img className='rounded-md' src="./transport/t1.jpg" alt="ring" />
 
-      </motion.div>
+        </motion.div>
+        <motion.div
+          variants={fadeIn('left', 'spring', 0.5 * 1, 1.5)}
+        >
+          <img className='rounded-md' src="./transport/t2.jpg" alt="ring" />
 
-      <motion.div
-        variants={fadeIn('right', 'spring', 0.5 * 1, 1)}
-        className='rounded-xl w-full green-pink-gradient overflow-hidden p-[1px]'
-      >
-        <img className='rounded-xl' src="./rings/ring2.png" alt="ring" />
+        </motion.div>
+        <motion.div
+          variants={fadeIn('right', 'spring', 0.5 * 1.5, 1)}
+        >
+          <img className='rounded-md' src="./transport/t3.jpg" alt="ring" />
 
-      </motion.div>
-      <motion.div
-        variants={fadeIn('right', 'spring', 0.5 * 2, 1)}
-        className='rounded-xl w-full green-pink-gradient overflow-hidden p-[1px]'
-      >
-        <img className='rounded-xl' src="./rings/ring3.png" alt="ring" />
+        </motion.div>
+        <motion.div
+          variants={fadeIn('left', 'spring', 0.5 * 1.5, 1)}
+        >
+          <img className='rounded-md' src="./transport/t4.jpg" alt="ring" />
 
-      </motion.div>
+        </motion.div>
 
-      <motion.div
-        variants={fadeIn('right', 'spring', 0.5 * 3, 1)}
-        className='rounded-xl w-full green-pink-gradient overflow-hidden p-[1px]'
-      >
-        <img className='rounded-xl' src="./rings/ring4.png" alt="ring" />
+        {/* <motion.div
+  variants={fadeIn('right', 'spring', 0.5 * 0, 1)}
+  className='rounded-xl w-full green-pink-gradient overflow-hidden p-[1px]'
+>
+  <img className='rounded-xl' src="./rings/ring1.png" alt="ring" />
 
-      </motion.div>
-      <motion.div
-        variants={fadeIn('right', 'spring', 0.5 * 4, 1)}
-        className='rounded-xl w-full green-pink-gradient overflow-hidden p-[1px]'
-      >
-        <img className='rounded-xl' src="./rings/ring5.png" alt="ring" />
+</motion.div> */}
 
-      </motion.div>
-      <motion.div
-        variants={fadeIn('right', 'spring', 0.5 * 5, 1)}
-        className='rounded-xl w-full green-pink-gradient overflow-hidden p-[1px]'
-      >
-        <img className='rounded-xl' src="./rings/ring6.png" alt="ring" />
+      </div >
+    </div>
 
-      </motion.div>
-    </div >
   )
 }
 
