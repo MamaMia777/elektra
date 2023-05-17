@@ -1,7 +1,6 @@
 import { BrowserRouter } from 'react-router-dom'
-import { About, Contact, Navbar, StarsCanvas, Hero, RingSection } from "./components"
+import { Contact, Navbar, StarsCanvas, Hero, RingSection } from "./components"
 import First from './components/First'
-import Video from './components/Video'
 import Footer from './components/Footer'
 import Man from './components/ManSection'
 const App = () => {
@@ -14,7 +13,6 @@ const App = () => {
           <Hero />
           <StarsCanvas />
         </div>
-        {/* <About /> */}
         <First />
         <Man />
         <RingSection />
@@ -23,8 +21,6 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
-
-
         <Footer />
       </div>
     </BrowserRouter>

@@ -35,13 +35,6 @@ const First = () => {
 
         </motion.div>
 
-        {/* <motion.div
-  variants={fadeIn('right', 'spring', 0.5 * 0, 1)}
-  className='rounded-xl w-full green-pink-gradient overflow-hidden p-[1px]'
->
-  <img className='rounded-xl' src="./rings/ring1.png" alt="ring" />
-
-</motion.div> */}
 
       </div >
     </div>

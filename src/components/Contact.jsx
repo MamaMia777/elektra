@@ -27,16 +27,16 @@ const Contact = () => {
     setLoading(true)
 
     emailjs.send(
-      'service_1ala2jz',
-      'template_1qkis1j',
+      'service_ifm85gc',
+      'template_945fsfd',
       {
         from_name: form.name,
-        to_name: 'goldsmith3d',
+        to_name: 'elektra',
         from_email: form.email,
-        to_email: 'infogoldsmith3d@gmail.com',
+        to_email: 'stgroup@inbox.lv',
         message: form.message
       },
-      'FzIZQM-SvUUM2aJUE'
+      'GBXLPxBwnQ4YC0Q9c'
     ).then(() => {
       setLoading(false);
       alert('Thank you. I will get back to you as soon as possible!');
