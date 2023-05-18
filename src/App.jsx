@@ -13,8 +13,8 @@ const App = () => {
           <Hero />
           <StarsCanvas />
         </div>
-        <First />
         <Man />
+        <First />
         <RingSection />
 
         <div className='relative z-0'>
