@@ -54,51 +54,55 @@ const Contact = () => {
 
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden items-center justify-between'>
-      <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className='flex-[0.75] bg-[rgb(16,13,37)] p-8 rounded-2xl w-full'>
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your name</span>
-            <input className='bg-[rgb(21,16,48)] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' type="text" name="name" value={form.name} onChange={handleChange} placeholder={"What's your name?"} />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Email</span>
-            <input className='bg-[rgb(21,16,48)] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' type="email" name="email" value={form.email} onChange={handleChange} placeholder={"What's your email?"} />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your order</span>
-            <textarea rows="7" className='bg-[rgb(21,16,48)] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' type="text" name="message" value={form.message} onChange={handleChange} placeholder={"What do you want to create ..."} />
-          </label>
+    <div className='w-full'>
+      <h1 className={`${styles.sectionHeadText} bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-700 text-clip bg-clip-text text-transparent mb-[3rem] ml-auto`}>Gearbox-transmission</h1>
 
-          <button type="submit" className='bg-[#0b4037] py-3 px-8 w-fit outline-none text-white font-bold shadow-md shadow-primary rounded-xl'>
-            {loading ? 'Sending...' : 'Send'}
-          </button>
+      <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden items-center justify-between'>
+        <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className='flex-[0.75] bg-[rgb(16,13,37)] p-8 rounded-2xl w-full'>
+          <p className={styles.sectionSubText}>Get in touch</p>
+          <h3 className={styles.sectionHeadText}>Contact.</h3>
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className='mt-12 flex flex-col gap-8'
+          >
+            <label className='flex flex-col'>
+              <span className='text-white font-medium mb-4'>Your name</span>
+              <input className='bg-[rgb(21,16,48)] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' type="text" name="name" value={form.name} onChange={handleChange} placeholder={"What's your name?"} />
+            </label>
+            <label className='flex flex-col'>
+              <span className='text-white font-medium mb-4'>Your Email</span>
+              <input className='bg-[rgb(21,16,48)] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' type="email" name="email" value={form.email} onChange={handleChange} placeholder={"What's your email?"} />
+            </label>
+            <label className='flex flex-col'>
+              <span className='text-white font-medium mb-4'>Your order</span>
+              <textarea rows="7" className='bg-[rgb(21,16,48)] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' type="text" name="message" value={form.message} onChange={handleChange} placeholder={"What do you want to create ..."} />
+            </label>
+
+            <button type="submit" className='bg-[#0b4037] py-3 px-8 w-fit outline-none text-white font-bold shadow-md shadow-primary rounded-xl'>
+              {loading ? 'Sending...' : 'Send'}
+            </button>
 
 
-        </form>
-      </motion.div>
+          </form>
+        </motion.div>
 
-      <motion.img
-        // variants={slideIn('right', 'tween', 0.2, 1)}
-        src="./gears.png"
-        alt="diamond"
-        className='w-[200px] h-[200px] md:w-[400px] md:h-[400px]'
-        animate={{
-          y: [0, 50, 0]
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          repeatType: 'loop'
-        }}
+        <motion.img
+          // variants={slideIn('right', 'tween', 0.2, 1)}
+          src="./gears.png"
+          alt="diamond"
+          className='w-[200px] h-[200px] md:w-[400px] md:h-[400px]'
+          animate={{
+            y: [0, 50, 0]
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            repeatType: 'loop'
+          }}
 
-      />
+        />
+      </div>
     </div>
   )
 }
