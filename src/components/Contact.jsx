@@ -89,9 +89,9 @@ const Contact = () => {
 
         <motion.img
           // variants={slideIn('right', 'tween', 0.2, 1)}
-          src="./gears.png"
+          src="./transmission.png"
           alt="diamond"
-          className='w-[200px] h-[200px] md:w-[400px] md:h-[400px]'
+          className='w-[400px] h-[400px] md:w-[500px] md:h-[500px]'
           animate={{
             y: [0, 50, 0]
           }}
